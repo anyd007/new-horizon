@@ -116,7 +116,7 @@
 
 
 @for $i from 1 through 4 {
-    .navigation .nav .nav-main__item:nth-child(#{$i}) {
+    .nav .nav-main__item:nth-child(#{$i}) {
       transition-delay: ($i * 0.1s);
     }
   }
