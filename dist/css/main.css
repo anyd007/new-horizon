@@ -307,6 +307,49 @@
   padding-top: 5rem;
 }
 
+.scrollArrow {
+  position: fixed;
+  z-index: 4;
+  bottom: 5rem;
+  right: 1rem;
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  visibility: hidden;
+  color: #ffffff;
+}
+.scrollArrow.open {
+  visibility: visible;
+  transition: all 0.5s ease-in-out;
+  -webkit-animation-name: showScroll;
+          animation-name: showScroll;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes showScroll {
+  from {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes showScroll {
+  from {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(180deg);
+  }
+}
 @media (max-width: 768px) {
   .wave {
     display: none;

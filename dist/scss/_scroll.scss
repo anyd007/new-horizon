@@ -1,0 +1,32 @@
+@import './config';
+
+.scrollArrow{
+    position: fixed;
+    z-index: 4;
+    bottom: 5rem;
+    right: 1rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    @include smooth;
+    visibility: hidden;
+    color: $main-font-color;
+
+    &.open{
+        visibility: visible;
+        @include smooth;
+        animation-name: showScroll;
+        animation-duration: 1.5s;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes showScroll {
+    from{
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotate(180deg);
+    }
+    }
