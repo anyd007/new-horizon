@@ -1,7 +1,7 @@
 $main-background-color: #000000;
 $main-font-color: #ffffff;
 $extra-color: #FF820E;
-$menuBackground: rgba($main-background-color, 0.7);
+$menuBackground: rgba($main-background-color, 0.5);
 
 //responsive
 $screen-size:(
@@ -18,4 +18,16 @@ $screen-size:(
 
 @mixin smooth {
     transition: all 0.5s ease-in-out;
+}
+
+@mixin linear {
+    background: linear-gradient(
+        to right,
+        rgba($extra-color, 0.9),
+        rgba($extra-color, 0.4)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
 }

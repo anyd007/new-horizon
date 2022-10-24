@@ -1,8 +1,10 @@
 @import "../config";
 
 @include screen(tablets) {
-  .navigation {
-
+  
+  .wave{
+    display: none;
+}
     .menu-btn {
       visibility: visible;
       position: absolute;
@@ -65,9 +67,9 @@
     }
 
     .nav {
+      position: fixed;
       visibility: hidden;
       width: 100%;
-      padding-top: 0%;
 
       &.open{
         visibility: visible;
@@ -86,7 +88,6 @@
         background-image: url(../../../images/logo.jpg);
         background-position: center top;
         background-repeat: no-repeat;
-        background-attachment: fixed;
         background-size: 50% auto;
         background-color: $menuBackground;
         backdrop-filter: blur(4px);
@@ -111,12 +112,8 @@
         }
       }
     }
-
-    .wave{
-        display: none;
-    }
   }
-}
+
 
 @for $i from 1 through 4 {
     .navigation .nav .nav-main__item:nth-child(#{$i}) {

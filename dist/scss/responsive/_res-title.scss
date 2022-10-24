@@ -1,0 +1,15 @@
+@import '../config';
+
+@include screen(tablets){
+
+    .title{
+        padding-top: 2rem;
+        &__text{
+            font-size: 3rem;
+
+            &--name{
+                font-size: 4rem;
+            }
+        }
+    }
+}

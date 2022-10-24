@@ -1,3 +1,4 @@
+const header = document.querySelector("header")
 const menuBtn = document.querySelector(".menu-btn");
 const burger = document.querySelector(".menu-btn__burger");
 const nav = document.querySelector(".nav");
@@ -8,6 +9,7 @@ let showMenu = false;
 
 const toggleMenu = () =>{
     if(!showMenu){
+        header.classList.add("open")
         burger.classList.add("open")
         nav.classList.add("open");
         navMenu.classList.add("open")
@@ -17,6 +19,7 @@ const toggleMenu = () =>{
         showMenu = true;
     }
     else{
+        header.classList.remove("open")
         burger.classList.remove("open");
         nav.classList.remove("open")
         navMenu.classList.remove("open")

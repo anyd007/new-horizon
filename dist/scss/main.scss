@@ -1,4 +1,4 @@
-@import './config', './nav', './responsive/res-nav';
+@import './config', './nav', './title', './responsive/res-nav', './responsive/res-title';
 
 *{
     box-sizing: border-box;
@@ -11,11 +11,31 @@ body{
     font-family: 'Lato', sans-serif;
     background: $main-background-color;
 }
+body::-webkit-scrollbar {
+    display: none;
+}
+header{
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+    @include smooth;
 
-.navigation :is(a){
+    &.open{
+        padding: 0%;
+    }
+}
+main{
+    height: 100%;
+    width: 100%;
+}
+
+h1{
+    color: $main-font-color;
+}
+header :is(a){
     color: $main-font-color;
     text-decoration: none;
 }
-.navigation :is(ul){
+header :is(ul){
     list-style: none;
 }
