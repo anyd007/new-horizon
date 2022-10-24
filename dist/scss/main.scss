@@ -1,0 +1,21 @@
+@import './config', './nav', './responsive/res-nav';
+
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    background: $main-background-color;
+}
+
+.navigation :is(a){
+    color: $main-font-color;
+    text-decoration: none;
+}
+.navigation :is(ul){
+    list-style: none;
+}
