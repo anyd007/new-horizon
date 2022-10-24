@@ -40,3 +40,7 @@ header :is(a){
 header :is(ul){
     list-style: none;
 }
+
+.stopScroll{
+    overflow: hidden;
+}

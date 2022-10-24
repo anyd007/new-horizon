@@ -221,9 +221,9 @@
 }
 .about__img {
   opacity: 0;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
+  width: 90%;
+  height: auto;
+  border-radius: 10px;
   -webkit-animation: show-img 1s 1s forwards, shadow-move 5s linear 1s infinite;
           animation: show-img 1s 1s forwards, shadow-move 5s linear 1s infinite;
 }
@@ -472,4 +472,8 @@ header :is(a) {
 
 header :is(ul) {
   list-style: none;
+}
+
+.stopScroll {
+  overflow: hidden;
 }/*# sourceMappingURL=main.css.map */
