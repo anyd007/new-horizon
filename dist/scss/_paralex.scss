@@ -1,0 +1,14 @@
+.parallax1{
+    background-image: url('../../images/img-2.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    height: 30vh;
+    @include smooth;
+
+    &:hover{
+        opacity: 1;
+    }
+}

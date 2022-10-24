@@ -1,0 +1,11 @@
+@import '../config';
+
+@include screen(tablets){
+.about{
+    padding-top: 3rem;
+    grid-template-columns: 97%;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+}
