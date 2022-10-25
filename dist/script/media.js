@@ -16,24 +16,26 @@ const playlistItems = document.querySelectorAll(".audio-playlist__item");
 const songs = Array.from(document.querySelectorAll(".audio-playlist__songs audio"))
 
 //indeks piosenek
-let songIndex = songs.length -1
+let songIndex = songs.length -1;
 
 //domyslnie załadowana piososenka
-loadSong(songs[songIndex])
+// loadSong(songs[songIndex])
 
 //odświeżanie info o piosence
 function loadSong(song){
+   
     title.textContent = song.textContent
     audio.src = song.src
     // cover.src = `../images/${song}.jpg`
 }
 
 const songChoose = e =>{
-    playlistItems.forEach((item, index)=>{
+    playlistItems.forEach((item, itemIndex)=>{
         if(e.target === item){
-            songs.forEach((song, songIndex)=>{
-                if(index === songIndex){
+            songs.forEach((song, index)=>{
+                if(index === itemIndex){
                     setTimeout(() => {
+                        songIndex = index
                         loadSong(song)
                         musicContainer.classList.add("play")
                         popupBg.classList.add("play")
