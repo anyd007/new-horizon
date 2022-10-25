@@ -9,7 +9,6 @@ let showMenu = false;
 
 const toggleMenu = () =>{
     if(!showMenu){
-        document.querySelector("body").classList.add("stopScroll")
         header.classList.add("open")
         burger.classList.add("open")
         nav.classList.add("open");
@@ -20,7 +19,6 @@ const toggleMenu = () =>{
         showMenu = true;
     }
     else{
-        document.querySelector("body").classList.remove("stopScroll")
         header.classList.remove("open")
         burger.classList.remove("open");
         nav.classList.remove("open")

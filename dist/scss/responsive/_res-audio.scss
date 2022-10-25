@@ -1,0 +1,28 @@
+
+@include screen(tablets){
+
+    .audio{
+
+        .audio-playlist{
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .audio-container{
+            width: 90%;
+
+            &__info{
+                padding: 20px 10px 40px 150px;
+            }
+
+            &__image{
+                width: 150px;
+    
+                img{
+                    height: 150px;
+                    bottom: 30%;
+                }
+            }
+        }
+
+    }
+}

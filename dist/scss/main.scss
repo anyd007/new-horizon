@@ -1,5 +1,5 @@
 @import './config', './nav', './title', './about', './paralex', './responsive/res-about', './audio'
-, './scroll' ,'./responsive/res-nav', './responsive/res-title';
+, './scroll' ,'./responsive/res-nav', './responsive/res-title', './responsive/res-audio';
 
 *{
     box-sizing: border-box;
@@ -30,7 +30,7 @@ main{
     width: 100%;
 }
 
-h1, p{
+h1, h2, h4, p, button{
     color: $main-font-color;
 }
 header :is(a){
