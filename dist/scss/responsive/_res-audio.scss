@@ -11,16 +11,24 @@
             width: 90%;
 
             &__info{
-                padding: 20px 10px 40px 150px;
+                padding: 20px 10px 25px 100px;
+
+                &--title{
+                    font-size: 1.5rem;
+                }
             }
 
             &__image{
-                width: 150px;
+                width: 120px;
     
                 img{
-                    height: 150px;
+                    height: 120px;
                     bottom: 30%;
                 }
+            }
+
+            &__action{
+                font-size: 1.5rem;
             }
         }
 
