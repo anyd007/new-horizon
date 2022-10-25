@@ -18,6 +18,10 @@
                 }
             }
 
+            &__item{
+                grid-template-rows: 13vh 12vw;
+            }
+
             &__image{
                 width: 120px;
     
