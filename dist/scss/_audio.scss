@@ -45,7 +45,7 @@
         z-index: 5;
         backdrop-filter: blur(20px);
         background: rgba(255, 255, 255, 0.3);
-        overflow-y: scroll;
+        overflow-x: scroll;
         overflow-x: hidden;
         white-space: nowrap;
         animation: showBg 0.5s linear forwards;

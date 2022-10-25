@@ -39,6 +39,7 @@ const songChoose = e =>{
                         loadSong(song)
                         musicContainer.classList.add("play")
                         popupBg.classList.add("play")
+                        document.body.classList.add("stopScroll")
                         playSong()
                     }, 300);
                 }
@@ -117,5 +118,6 @@ playlistContainer.addEventListener("click", songChoose)
 popupBg.addEventListener("click", ()=>{
     popupBg.classList.remove("play")
     musicContainer.classList.remove("play")
+    document.body.classList.remove("stopScroll")
     pauseSong()
 })
