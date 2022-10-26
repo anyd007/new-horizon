@@ -10,6 +10,8 @@ const progressContainer = document.querySelector(".audio-container__info--progre
 const volume = document.querySelector(".volume")
 const volumeContainer = document.querySelector(".audio-container__volume--progress");
 const mute = document.querySelector("#mute")
+const fullTime = document.querySelector("#fullTime")
+const currentTimeSong = document.querySelector("#currentTime")
 const title = document.querySelector(".audio-container__info--title");
 const cover = document.querySelector("#cover");
 const playlistContainer = document.querySelector(".audio-playlist");
@@ -102,6 +104,20 @@ const updateProgress = (e) => {
  const {duration, currentTime} = e.srcElement;
  const progressPercent = (currentTime / duration) * 100;
  progress.style.width = `${progressPercent}%`
+    showTime(currentTime, duration)
+}
+
+const showTime = (currentTime, duration) =>{
+    if(!duration){
+        return;
+    }
+    const time_s = currentTime;
+    const minute = Math.floor(time_s/60);
+    const rest_seconds = Math.floor(time_s%60);
+    const fullMin = Math.floor(duration/60)
+    const fullSec = Math.floor(duration%60)
+    fullTime.textContent = `${fullMin}m ${fullSec}s`
+    currentTimeSong.textContent = `${minute}m ${rest_seconds}s`  
 }
 
 function setProgress(e){

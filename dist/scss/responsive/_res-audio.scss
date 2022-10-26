@@ -19,6 +19,10 @@
             width: 90%;
             top: 58%;
 
+            &__item{
+                grid-template-rows: 13vh 12vw;
+            }
+
             &__info{
                 padding: 20px 10px 25px 100px;
 
@@ -27,8 +31,15 @@
                 }
             }
 
-            &__item{
-                grid-template-rows: 13vh 12vw;
+            &__show-time{
+                flex-direction: column;
+                gap: 3px;
+                padding-bottom: 15px;
+
+                &--full{
+                    font-size: 1.2rem;
+                }
+               
             }
 
             &__image{

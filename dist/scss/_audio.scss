@@ -58,6 +58,7 @@
         &__title{
             position: absolute;
             width: 90%;
+            height: auto;
             left: 50%;
             transform: translate(-50%);
             top: -12%;
@@ -134,6 +135,24 @@
         width: 0%;
         transition: width 0.1s linear;
     }
+
+    &__show-time{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        gap: 10px;
+        transition: all 1s ease-in-out;
+
+        &--full{
+            font-size: 1.3rem;
+        }
+
+        &--current{
+            font-size: 1.3rem;
+        }
+    }
     
     &__volume{
         display: flex;
@@ -141,7 +160,6 @@
         justify-content: center;
         text-align: center;
         width: 100%;
-        grid-area: 2 / 2;
 
         i{
             color: #fff;
