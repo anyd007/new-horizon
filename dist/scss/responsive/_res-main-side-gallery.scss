@@ -1,0 +1,28 @@
+@import "../config";
+
+@include screen(tablets) {
+  .gallery {
+    .gallery-container {
+      text-align: center;
+      grid-template-columns: 1fr 1fr;
+
+      &__item {
+        &--img {
+          width: 80%;
+        }
+      }
+
+      &__link {
+        grid-column: 1 / 3;
+      }
+    }
+  }
+
+  .modal {
+
+    &__img {
+        margin-top: 10rem;
+      width: 95%;
+    }
+  }
+}

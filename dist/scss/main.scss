@@ -1,5 +1,6 @@
 @import './config', './nav', './title', './about', './paralex', './responsive/res-about', './audio'
-, './scroll' ,'./responsive/res-nav', './responsive/res-title', './responsive/res-audio';
+, './scroll' , './main-side-gallery', './responsive/res-nav', './responsive/res-title', 
+'./responsive/res-audio', './responsive/res-main-side-gallery';
 
 *{
     box-sizing: border-box;
@@ -33,10 +34,11 @@ main{
 h1, h2, h4, p, button{
     color: $main-font-color;
 }
-header :is(a){
+a{
     color: $main-font-color;
     text-decoration: none;
 }
+
 header :is(ul){
     list-style: none;
 }
