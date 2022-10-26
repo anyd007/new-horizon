@@ -1,7 +1,8 @@
 @import './config';
 
     .title{
-        padding-top: 4rem;
+        text-align: center;
+        // padding-top: 4rem;
         position: relative;
         opacity: 0;
         animation: show-title 0.8s linear 0.5s forwards;
@@ -25,7 +26,11 @@
             animation: show-logo2 0.5s linear 1s forwards;
             overflow: hidden;
         }
-
+        &__main-logo{
+            width: 90%;
+            height: auto;
+            margin: -8% 0;
+        }
         &__text{
         text-align: center;
         font-size: 5rem;

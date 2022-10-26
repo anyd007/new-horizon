@@ -54,7 +54,7 @@
   left: 100%;
   top: 0%;
   transition: all 0.5s ease-in-out;
-  background: #FF820E;
+  background: #9C1513;
   opacity: 0;
 }
 .nav .nav-main__item:hover::before {
@@ -69,7 +69,7 @@
   left: 0%;
   top: 100%;
   transition: all 0.5s ease-in-out;
-  background: #FF820E;
+  background: #9C1513;
   opacity: 0;
 }
 .nav .nav-main__item:hover::after {
@@ -114,7 +114,7 @@
   }
 }
 .title {
-  padding-top: 4rem;
+  text-align: center;
   position: relative;
   opacity: 0;
   -webkit-animation: show-title 0.8s linear 0.5s forwards;
@@ -140,10 +140,15 @@
           animation: show-logo2 0.5s linear 1s forwards;
   overflow: hidden;
 }
+.title__main-logo {
+  width: 90%;
+  height: auto;
+  margin: -8% 0;
+}
 .title__text {
   text-align: center;
   font-size: 5rem;
-  background: linear-gradient(to right, rgba(255, 130, 14, 0.9), rgba(255, 130, 14, 0.4));
+  background: linear-gradient(to right, rgba(156, 21, 19, 0.9), rgba(156, 21, 19, 0.4));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
@@ -235,13 +240,13 @@
 
 @-webkit-keyframes shadow-move {
   50% {
-    box-shadow: 4px 1px 30px #FF820E;
+    box-shadow: 4px 1px 30px #9C1513;
   }
 }
 
 @keyframes shadow-move {
   50% {
-    box-shadow: 4px 1px 30px #FF820E;
+    box-shadow: 4px 1px 30px #9C1513;
   }
 }
 @-webkit-keyframes show-img {
@@ -328,7 +333,7 @@
   border: 1px solid #fff;
   padding: 5px 15px;
   border-radius: 10px;
-  box-shadow: 2px 2px 20px 0 #FF820E;
+  box-shadow: 2px 2px 20px 0 #9C1513;
 }
 .audio .audio-playlist__item i {
   color: #fff;
@@ -388,7 +393,7 @@
   justify-content: center;
   background: #000;
   border-radius: 10px;
-  box-shadow: 2px 2px 20px 0 #FF820E;
+  box-shadow: 2px 2px 20px 0 #9C1513;
   transition: all 0.5s ease-in-out;
 }
 .audio .audio-container__item.play .audio-container__image img {
@@ -424,7 +429,7 @@
   width: 100%;
 }
 .audio .audio-container .progress {
-  background: #FF820E;
+  background: #9C1513;
   border-radius: 5px;
   height: 100%;
   width: 0%;
@@ -461,7 +466,7 @@
 .audio .audio-container__volume--progress {
   width: 60%;
   background: #fff;
-  color: #FF820E;
+  color: #9C1513;
   border-radius: 5px;
   cursor: pointer;
   margin: 10px 0;
@@ -469,7 +474,7 @@
   transition: all 0.5s ease-in-out;
 }
 .audio .audio-container__volume .volume {
-  background: #FF820E;
+  background: #9C1513;
   border-radius: 5px;
   height: 100%;
   width: 0%;
@@ -639,7 +644,7 @@
   width: 28vw;
   height: auto;
   cursor: pointer;
-  box-shadow: 1px 1px 15px 0 #FF820E;
+  box-shadow: 1px 1px 15px 0 #9C1513;
   transition: all 0.5s ease-in-out;
 }
 .gallery .gallery-container__item--img:hover {
@@ -680,7 +685,7 @@
   height: auto;
   margin-top: 1.5rem;
   background-position: center;
-  box-shadow: 1px 1px 15px 0 #FF820E;
+  box-shadow: 1px 1px 15px 0 #9C1513;
 }
 
 @keyframes showBg {
@@ -816,6 +821,9 @@
   }
   .title__text--name {
     font-size: 4rem;
+  }
+  .title__main-logo {
+    margin-top: -20%;
   }
 }
 @media (max-width: 768px) {
