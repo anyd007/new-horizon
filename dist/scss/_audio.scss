@@ -54,14 +54,22 @@
             display: block;
             overflow: hidden;
         }
+
+        &__title{
+            position: absolute;
+            width: 90%;
+            left: 50%;
+            transform: translate(-50%);
+            top: -12%;
+        }
     }
     .audio-container{
        display: none;
         position: fixed;
         z-index: 6;
         left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+        top: 65%;
+        transform: translate(-50%, -35%);
         width: 70%;
         margin: 0 auto;
         animation: showModal 0.9s linear forwards;
@@ -69,7 +77,6 @@
         &.play{
             display: block;
         }
-
 
     &__item{
         position: relative;
@@ -149,7 +156,7 @@
             border-radius: 5px;
             cursor: pointer;
             margin: 10px 0;
-            height: 4px;
+            height: 7px;
             @include smooth;
         }
         .volume{

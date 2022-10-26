@@ -7,8 +7,17 @@
             grid-template-columns: repeat(2, 1fr);
         }
 
+        .bg{
+
+            &__title{
+                top: 0%;
+                width: 150%;
+            }
+        }
+
         .audio-container{
             width: 90%;
+            top: 58%;
 
             &__info{
                 padding: 20px 10px 25px 100px;

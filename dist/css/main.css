@@ -356,13 +356,20 @@
   display: block;
   overflow: hidden;
 }
+.audio .bg__title {
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  transform: translate(-50%);
+  top: -12%;
+}
 .audio .audio-container {
   display: none;
   position: fixed;
   z-index: 6;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 65%;
+  transform: translate(-50%, -35%);
   width: 70%;
   margin: 0 auto;
   -webkit-animation: showModal 0.9s linear forwards;
@@ -443,7 +450,7 @@
   border-radius: 5px;
   cursor: pointer;
   margin: 10px 0;
-  height: 4px;
+  height: 7px;
   transition: all 0.5s ease-in-out;
 }
 .audio .audio-container__volume .volume {
@@ -717,8 +724,13 @@
   .audio .audio-playlist {
     grid-template-columns: repeat(2, 1fr);
   }
+  .audio .bg__title {
+    top: 0%;
+    width: 150%;
+  }
   .audio .audio-container {
     width: 90%;
+    top: 58%;
   }
   .audio .audio-container__info {
     padding: 20px 10px 25px 100px;
