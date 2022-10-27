@@ -14,6 +14,7 @@ const openModal = e =>{
             modal.classList.add("open")
             document.body.classList.add("stopScroll")
             counter = index;
+            window.history.pushState({id:1}, null, null)
         }
     })
 }
@@ -63,5 +64,8 @@ prev.addEventListener("click", prevSlide)
 exit.addEventListener("click", ()=>{
     modal.classList.remove("open")
     document.body.classList.remove("stopScroll")
-
+})
+window.addEventListener("popstate", ()=>{
+    modal.classList.remove("open")
+    document.body.classList.remove("stopScroll")
 })
