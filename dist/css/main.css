@@ -635,9 +635,6 @@
   align-items: center;
   justify-items: center;
 }
-.gallery .gallery-container__item:nth-child(1) {
-  grid-area: 2/2/2/2;
-}
 .gallery .gallery-container__item--img {
   border: 1px solid #fff;
   border-radius: 10px;
@@ -823,6 +820,7 @@
     font-size: 4rem;
   }
   .title__main-logo {
+    margin: 0%;
     margin-top: -20%;
   }
 }
@@ -872,7 +870,7 @@
     grid-template-columns: 1fr 1fr;
   }
   .gallery .gallery-container__item--img {
-    width: 80%;
+    width: 95%;
   }
   .gallery .gallery-container__link {
     grid-column: 1/3;

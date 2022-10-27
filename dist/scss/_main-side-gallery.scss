@@ -28,10 +28,6 @@
         // overflow: hidden;
 
         &__item{
-
-            &:nth-child(1){
-                grid-area: 2 / 2 / 2 / 2;
-            }
             
             &--img{
                 border: 1px solid #fff;
