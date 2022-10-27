@@ -758,6 +758,19 @@
     opacity: 1;
   }
 }
+.contact {
+  padding: 2rem 0;
+  text-align: center;
+}
+.contact__title {
+  font-size: 2.5rem;
+}
+.contact__title--link {
+  font-size: 2rem;
+  color: #9C1513;
+  text-shadow: 0px 0px 18px #fff;
+}
+
 @media (max-width: 768px) {
   .wave {
     display: none;
