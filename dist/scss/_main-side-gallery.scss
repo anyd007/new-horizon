@@ -75,15 +75,67 @@
     }
 
     &__img{
+        z-index: 6;
         border-radius: 10px;
         border: 1px solid #fff;
         width: 70%;
         height: auto;
-        margin-top: 1.5rem;
+        margin-top: 3rem;
         background-position: center;
         box-shadow: 1px 1px 15px 0 $extra-color;
         
 
+    }
+
+    &__next{
+        cursor: pointer;
+        z-index: 6;
+        position: absolute;
+        color: #fff;
+        font-size: 3rem;
+        top: 40%;
+        right: 5%;
+        opacity: 0.8;
+        @include smooth;
+
+        &:hover{
+            opacity: 1;transform: scale(1.2);
+        }
+    }
+
+    &__prev{
+        cursor: pointer;
+        z-index: 6;
+        position: absolute;
+        color: #fff;
+        font-size: 3rem;
+        top: 40%;
+        left: 5%;
+        opacity: 0.8;
+        @include smooth;
+
+        &:hover{
+            opacity: 1;
+            transform: scale(1.2);
+        }
+    }
+
+    &__exit{
+        cursor: pointer;
+        z-index: 6;
+        position: absolute;
+        color: #fff;
+        font-size: 2rem;
+        left: 50%;
+        transform: translate(-50%);
+        top: 3%;
+        opacity: 0.8;
+        @include smooth;
+
+        &:hover{
+            color:  $extra-color;
+            transform: translate(-50%) rotate(360deg) scale(1.3);
+        }
     }
 }
 

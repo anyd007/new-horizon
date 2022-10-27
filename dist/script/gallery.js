@@ -2,15 +2,42 @@ const galleryContainer = document.querySelector(".gallery-container");
 const galleryImages = document.querySelectorAll(".gallery-container__item--img");
 const modal = document.querySelector(".modal");
 const modalImage = document.querySelector(".modal__img");
+const next = document.querySelector(".modal__next");
+const prev = document.querySelector(".modal__prev");
+const exit = document.querySelector(".modal__exit");
 
+let counter = 0;
 const openModal = e =>{
     galleryImages.forEach((img, index)=>{
         if(e.target === img){
             modalImage.src = img.src
             modal.classList.add("open")
             document.body.classList.add("stopScroll")
+            counter = index;
         }
     })
+}
+
+
+const nextSlide = () =>{
+    if(modal.classList.contains("open")){
+       
+        if(counter >= galleryImages.length -1){
+            counter = -1;
+        }
+        counter++;
+        modalImage.src = galleryImages[counter].src
+    }
+}
+
+const prevSlide = () =>{
+    if(modal.classList.contains("open")){
+        if(counter <= 0){
+            counter = galleryImages.length
+        }
+        counter--;
+        modalImage.src = galleryImages[counter].src
+    }
 }
 
 //efekt pojawiania się zdjęć w galeri, lazyloader
@@ -31,7 +58,9 @@ apperOnScroll.observe(galleryImage);
 });
 
 galleryContainer. addEventListener("click", openModal)
-modal.addEventListener("click", ()=>{
+next.addEventListener("click", nextSlide)
+prev.addEventListener("click", prevSlide)
+exit.addEventListener("click", ()=>{
     modal.classList.remove("open")
     document.body.classList.remove("stopScroll")
 
