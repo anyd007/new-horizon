@@ -940,6 +940,9 @@
   .gallery .gallery-container__link {
     grid-column: 1/3;
   }
+  .gallery .video-container {
+    max-width: 90%;
+  }
   .modal__img {
     margin-top: 10rem;
     width: 95%;
