@@ -52,6 +52,26 @@
             @include smooth;
         }
     }
+
+    .video-container{
+        padding-top: 2rem;
+        max-width: 50%;
+        margin: 0 auto;
+        &__item{
+           position: relative;
+           width: 100%;
+           padding-bottom: 56.25%;
+           height: 0;
+
+           iframe{
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            height: 100%;
+            width: 100%;
+           }
+        }
+    }
 }
 
 .modal{

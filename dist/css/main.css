@@ -653,6 +653,24 @@
   grid-column: 1/4;
   transition: all 0.5s ease-in-out;
 }
+.gallery .video-container {
+  padding-top: 2rem;
+  max-width: 50%;
+  margin: 0 auto;
+}
+.gallery .video-container__item {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.gallery .video-container__item iframe {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+}
 
 .modal {
   display: none;
