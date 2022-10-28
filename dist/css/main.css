@@ -919,6 +919,16 @@
           animation-delay: 7.5s;
 }
 
+footer {
+  padding-bottom: 2rem;
+  text-align: center;
+  color: #fff;
+}
+footer a {
+  margin: 0 10px;
+  text-decoration: underline;
+}
+
 @media (max-width: 768px) {
   .wave {
     display: none;
