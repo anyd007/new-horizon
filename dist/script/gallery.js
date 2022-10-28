@@ -43,6 +43,19 @@ const prevSlide = () =>{
     }
 }
 
+const nextPrevKey = (e) =>{
+    if(e.key ===  'ArrowLeft'){
+      return  prevSlide()
+    }
+    if(e.key === 'ArrowRight'){
+        return nextSlide()
+    }
+    if(e.key === 'Escape'){
+        modal.classList.remove("open")
+        document.body.classList.remove("stopScroll")
+    }
+}
+
 //efekt pojawiania się zdjęć w galeri, lazyloader
 const options ={
     threshold: 1,
@@ -67,6 +80,7 @@ exit.addEventListener("click", ()=>{
     modal.classList.remove("open")
     document.body.classList.remove("stopScroll")
 })
+document.addEventListener("keyup", nextPrevKey)
 //listiner na okno przeglądaki
 window.addEventListener("popstate", ()=>{ 
     modal.classList.remove("open")
