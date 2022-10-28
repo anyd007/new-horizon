@@ -58,6 +58,7 @@ const playSong = () =>{
  musicItem.classList.add("play")
  playBtn.querySelector("i.fas").classList.remove("fa-play")
  playBtn.querySelector("i.fas").classList.add("fa-pause")
+ window.history.pushState({id:1}, null, null)
  audio.play()
 }
 
@@ -154,6 +155,12 @@ progressContainer.addEventListener("click", setProgress)
 volumeContainer.addEventListener("click", setVolume)
 playlistContainer.addEventListener("click", songChoose)
 popupBg.addEventListener("click", ()=>{
+    popupBg.classList.remove("play")
+    musicContainer.classList.remove("play")
+    document.body.classList.remove("stopScroll")
+    pauseSong()
+})
+window.addEventListener("popstate", ()=>{ 
     popupBg.classList.remove("play")
     musicContainer.classList.remove("play")
     document.body.classList.remove("stopScroll")
