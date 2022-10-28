@@ -24,8 +24,20 @@
 
   .modal {
 
+    &__next{
+      top: 60%;
+    }
+
+    &__prev{
+      top: 60%;
+    }
+
+    &__exit{
+      font-size: 3.5rem;
+    }
+
     &__img {
-        margin-top: 10rem;
+        margin-top: 7rem;
       width: 95%;
     }
   }

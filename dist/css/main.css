@@ -768,7 +768,7 @@
 }
 .contact__link {
   text-transform: uppercase;
-  font-size: calc(100vw - 20px);
+  font-size: 2rem;
   color: #9C1513;
 }
 .contact__link span {
@@ -1104,14 +1104,23 @@
   .gallery .video-container {
     max-width: 90%;
   }
+  .modal__next {
+    top: 60%;
+  }
+  .modal__prev {
+    top: 60%;
+  }
+  .modal__exit {
+    font-size: 3.5rem;
+  }
   .modal__img {
-    margin-top: 10rem;
+    margin-top: 7rem;
     width: 95%;
   }
 }
 @media (max-width: 768px) {
   .contact__link {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 * {
