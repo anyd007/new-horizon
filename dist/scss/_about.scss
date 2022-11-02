@@ -24,6 +24,13 @@
         opacity: 0;
         animation: show-text 1s 1s forwards;
 
+        span{
+            color: $extra-color;
+            font-size: 1.2rem;
+            text-shadow: 0px 0px 15px#fff;
+            cursor: pointer;
+        }
+
     }
 }
 
