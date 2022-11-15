@@ -1,0 +1,12 @@
+
+@include screen(tablets){
+#title{
+    margin-top: 3rem;
+}
+
+#back-btn{
+    left: 50%;
+    transform: translate(-50%);
+    top: 1rem;
+}
+}

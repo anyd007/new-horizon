@@ -658,6 +658,9 @@
   padding-top: 3rem;
   grid-column: 1/4;
   transition: all 0.5s ease-in-out;
+  padding-bottom: 1rem;
+  -webkit-animation: poping 3s linear infinite;
+          animation: poping 3s linear infinite;
 }
 .gallery .video-container {
   padding-top: 2rem;
@@ -762,6 +765,18 @@
   }
   to {
     opacity: 1;
+  }
+}
+@-webkit-keyframes poping {
+  50% {
+    color: #9C1513;
+    transform: scale(1.1);
+  }
+}
+@keyframes poping {
+  50% {
+    color: #9C1513;
+    transform: scale(1.1);
   }
 }
 .contact {
@@ -923,6 +938,74 @@
 .contact__link span:nth-child(25) {
   -webkit-animation-delay: 7.5s;
           animation-delay: 7.5s;
+}
+
+#back-btn {
+  position: absolute;
+  top: 3.5rem;
+  left: 2.5rem;
+  cursor: pointer;
+}
+
+#see-more-gallery {
+  position: relative;
+  background: transparent;
+}
+#see-more-gallery .see-more-gallery {
+  opacity: 0;
+  -webkit-animation-name: show-photo;
+          animation-name: show-photo;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes show-photo {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes show-photo {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.see-more-gallery:nth-child(1) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.see-more-gallery:nth-child(2) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.see-more-gallery:nth-child(3) {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+.see-more-gallery:nth-child(4) {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+.see-more-gallery:nth-child(5) {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.see-more-gallery:nth-child(6) {
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
 }
 
 footer {
@@ -1138,6 +1221,16 @@ footer a {
 @media (max-width: 768px) {
   .contact__link {
     font-size: 0.9rem;
+  }
+}
+@media (max-width: 768px) {
+  #title {
+    margin-top: 3rem;
+  }
+  #back-btn {
+    left: 50%;
+    transform: translate(-50%);
+    top: 1rem;
   }
 }
 * {

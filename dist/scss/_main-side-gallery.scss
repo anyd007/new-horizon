@@ -50,6 +50,8 @@
             padding-top: 3rem;
             grid-column: 1 / 4;
             @include smooth;
+            padding-bottom: 1rem;
+            animation: poping 3s linear infinite;
         }
     }
 
@@ -165,5 +167,12 @@
     }
     to{
         opacity: 1;
+    }
+}
+@keyframes poping {
+    50%{
+        color: $extra-color;
+        transform: scale(1.1);
+        
     }
 }

@@ -1,0 +1,33 @@
+
+#back-btn{
+    position: absolute;
+    top: 3.5rem;
+    left: 2.5rem;
+    cursor: pointer;
+}
+
+#see-more-gallery{
+    position: relative;
+    background: transparent;
+
+    .see-more-gallery{
+        opacity: 0;
+        animation-name: show-photo;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes show-photo {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@for $i from 1 through 6{
+    .see-more-gallery:nth-child(#{$i}){
+        animation-delay: $i * 0.3s;
+    }
+}
