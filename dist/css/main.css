@@ -940,6 +940,34 @@
           animation-delay: 7.5s;
 }
 
+.loader {
+  position: fixed;
+  z-index: 2;
+  top: 0%;
+  left: 0%;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1b1b1a;
+  transition: all 0.5s ease-in-out;
+}
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 15px solid #fff;
+  border-top-color: #9C1513;
+  -webkit-animation: loading 0.75s ease infinite;
+          animation: loading 0.75s ease infinite;
+}
+.loader.hidden {
+  opacity: 0;
+  z-index: -1;
+}
+
 #back-btn {
   position: absolute;
   top: 3.5rem;
@@ -976,6 +1004,22 @@
   }
   to {
     opacity: 1;
+  }
+}
+@-webkit-keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
   }
 }
 .see-more-gallery:nth-child(1) {
