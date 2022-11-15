@@ -973,6 +973,10 @@
   top: 3.5rem;
   left: 2.5rem;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+#back-btn:hover {
+  transform: scale(1.2);
 }
 
 #see-more-gallery {
