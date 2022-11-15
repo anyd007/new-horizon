@@ -1226,6 +1226,7 @@ footer a {
 @media (max-width: 768px) {
   #title {
     margin-top: 3rem;
+    width: 90%;
   }
   #back-btn {
     left: 50%;
