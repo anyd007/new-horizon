@@ -76,11 +76,17 @@ apperOnScroll.observe(galleryImage);
 
 const openGallery = async() =>{
     document.querySelector(".loader").classList.add("show")
+    try{
     const res = await fetch("gallery.html")
     if(res.ok){
-        document.querySelector(".loader").classList.remove("show")
+        setTimeout(()=>{
+            document.querySelector(".loader").classList.remove("show")
+        }, 2000)
     }
-    
+    }
+    catch(error){
+        console.log(error.message)
+    }
 }
 
 seeMoreBtn.addEventListener("click", openGallery)
