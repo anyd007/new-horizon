@@ -964,10 +964,6 @@
   -webkit-animation: loading 0.75s ease infinite;
           animation: loading 0.75s ease infinite;
 }
-.loader.hidden {
-  opacity: 0;
-  z-index: -1;
-}
 .loader.show {
   opacity: 1;
   z-index: 2;

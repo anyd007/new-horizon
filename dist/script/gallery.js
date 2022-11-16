@@ -1,6 +1,5 @@
 const galleryContainer = document.querySelector(".gallery-container");
 const galleryImages = document.querySelectorAll(".gallery-container__item--img");
-const seeMoreBtn = document.querySelector(".gallery-container__link");
 const modal = document.querySelector(".modal");
 const modalImage = document.querySelector(".modal__img");
 const next = document.querySelector(".modal__next");
@@ -74,22 +73,6 @@ galleryImages.forEach((galleryImage) => {
 apperOnScroll.observe(galleryImage);
 });
 
-const openGallery = async() =>{
-    document.querySelector(".loader").classList.add("show")
-    try{
-    const res = await fetch("gallery.html")
-    if(res.ok){
-        setTimeout(()=>{
-            document.querySelector(".loader").classList.remove("show")
-        }, 2000)
-    }
-    }
-    catch(error){
-        console.log(error.message)
-    }
-}
-
-seeMoreBtn.addEventListener("click", openGallery)
 galleryContainer.addEventListener("click", openModal)
 next.addEventListener("click", nextSlide)
 prev.addEventListener("click", prevSlide)

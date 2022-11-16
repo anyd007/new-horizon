@@ -4,6 +4,7 @@ const burger = document.querySelector(".menu-btn__burger");
 const nav = document.querySelector(".nav");
 const navMenu = document.querySelector(".nav-main");
 const navItems = document.querySelectorAll(".nav-main__item");
+const seeMoreBtn = document.querySelector(".gallery-container__link");
 
 let showMenu = false;
 
@@ -44,7 +45,26 @@ const closeMenu = () =>{
     document.body.classList.remove("stopScroll")
 }
 
+const openGallery = async() =>{
+    document.querySelector(".loader").classList.add("show")
+    try{
+    const res = await fetch("gallery.html")
+    if(res.ok){
+        setTimeout(()=>{
+            document.querySelector(".loader").classList.remove("show")
+        }, 2000)
+    }
+    if(!res.ok){
+        console.log(res.status)
+    }
+    }
+    catch(error){
+        console.log(error)
+    }
+}
+
 
 menuBtn.addEventListener("click", toggleMenu)
 navMenu.addEventListener("click", closeMenu)
+seeMoreBtn.addEventListener("click", openGallery)
 
