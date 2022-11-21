@@ -4,7 +4,7 @@
     .audio{
 
         .audio-playlist{
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(1, 50%);
         }
 
         .bg{
@@ -27,7 +27,7 @@
                 padding: 20px 10px 25px 100px;
 
                 &--title{
-                    font-size: 1.5rem;
+                    font-size: 1rem;
                 }
             }
 
