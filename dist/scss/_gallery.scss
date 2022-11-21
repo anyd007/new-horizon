@@ -32,12 +32,25 @@
     }
 }
 
+.gallery__title{
+    opacity: 0;
+
+    &.open{
+        opacity: 1;
+    }
+}
+
 #back-btn{
+    opacity: 0;
     position: absolute;
     top: 3.5rem;
     left: 2.5rem;
     cursor: pointer;
     @include smooth;
+
+    &.open{
+        opacity: 1;
+    }
 
     &:hover{
         transform: scale(1.2);

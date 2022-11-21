@@ -1,5 +1,7 @@
 import './anime.js';
 import './gallery.js'
+const galleryTitle = document.querySelector(".gallery__title")
+const backBtn = document.querySelector("#back-btn")
 
 AOS.init();
 
@@ -11,10 +13,12 @@ document.querySelectorAll('img')
 );
 
 
-// window.addEventListener("load", ()=>{
-//     const loader = document.querySelector(".loader")
-//     loader.classList.add("hidden")
-//     loader.addEventListener("transitionend", ()=>{
-//         document.body.removeChild("loader")
-//     })
-// })
+window.addEventListener("load", ()=>{
+    galleryTitle.classList.add("open")
+    backBtn.classList.add("open")
+    // const loader = document.querySelector(".loader")
+    // loader.classList.add("hidden")
+    // loader.addEventListener("transitionend", ()=>{
+    //     document.body.removeChild("loader")
+    // })
+})

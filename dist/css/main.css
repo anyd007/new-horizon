@@ -350,9 +350,13 @@
   z-index: -1;
   width: 60px;
   height: 60px;
+  transition: all 0.5s ease-in-out;
 }
 .audio .audio-playlist__item--title {
-  font-size: 1rem;
+  font-size: 1.3rem;
+}
+.audio .audio-playlist__item:hover i {
+  transform: scale(1.2);
 }
 .audio .bg {
   display: none;
@@ -978,12 +982,23 @@
   z-index: 2;
 }
 
+.gallery__title {
+  opacity: 0;
+}
+.gallery__title.open {
+  opacity: 1;
+}
+
 #back-btn {
+  opacity: 0;
   position: absolute;
   top: 3.5rem;
   left: 2.5rem;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
+}
+#back-btn.open {
+  opacity: 1;
 }
 #back-btn:hover {
   transform: scale(1.2);
