@@ -684,12 +684,16 @@
   filter: grayscale(100%);
 }
 .gallery .gallery-container__link {
-  padding-top: 3rem;
+  margin-top: 1rem;
+  padding: 5px 20px;
+  background: #9C1513;
   grid-column: 1/4;
   transition: all 0.5s ease-in-out;
-  padding-bottom: 1rem;
+  margin-bottom: 1rem;
   -webkit-animation: poping 3s linear infinite;
           animation: poping 3s linear infinite;
+  border: 2px solid #fff;
+  border-radius: 50px 10px;
 }
 .gallery .video-container {
   padding-top: 2rem;
@@ -799,13 +803,17 @@
 @-webkit-keyframes poping {
   50% {
     color: #9C1513;
+    background: #fff;
     transform: scale(1.1);
+    border: 2px solid #9C1513;
   }
 }
 @keyframes poping {
   50% {
     color: #9C1513;
+    background: #fff;
     transform: scale(1.1);
+    border: 2px solid #9C1513;
   }
 }
 .contact {
@@ -998,10 +1006,10 @@
   z-index: 2;
 }
 
-.gallery__title {
+#title {
   opacity: 0;
 }
-.gallery__title.open {
+#title.open {
   opacity: 1;
 }
 

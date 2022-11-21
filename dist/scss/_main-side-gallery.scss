@@ -47,11 +47,16 @@
         
 
         &__link{
-            padding-top: 3rem;
+            margin-top: 1rem;
+            padding: 5px 20px;
+            background: $extra-color;
             grid-column: 1 / 4;
             @include smooth;
-            padding-bottom: 1rem;
+            margin-bottom: 1rem;
             animation: poping 3s linear infinite;
+            border: 2px solid #fff;
+            border-radius: 50px 10px;
+
         }
     }
 
@@ -172,7 +177,9 @@
 @keyframes poping {
     50%{
         color: $extra-color;
+        background: #fff;
         transform: scale(1.1);
+        border: 2px solid $extra-color;
         
     }
 }

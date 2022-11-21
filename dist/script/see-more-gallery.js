@@ -1,6 +1,6 @@
 import './anime.js';
 import './gallery.js'
-const galleryTitle = document.querySelector(".gallery__title")
+const galleryTitle = document.querySelector("#title")
 const backBtn = document.querySelector("#back-btn")
 
 AOS.init();
