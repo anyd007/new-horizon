@@ -225,7 +225,8 @@
   gap: 3rem;
 }
 .about__img {
-  opacity: 0;
+  transform: translateX(-150%);
+  overflow: hidden;
   width: 90%;
   height: auto;
   border-radius: 10px;
@@ -246,6 +247,17 @@
 .about__info .about__members {
   display: grid;
   justify-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.about__info .about__members--img {
+  z-index: -1;
+  transition: transform 1s ease-in-out;
+  transition-delay: 1s;
+  transform: translateY(130%);
+}
+.about__info .about__members--img.open {
+  transform: translateY(0);
 }
 .about__info .about__members span {
   color: #9C1513;
@@ -266,20 +278,20 @@
 }
 @-webkit-keyframes show-img {
   from {
-    transform: rotate(0deg);
+    transform: translateX(-150%);
   }
   to {
     opacity: 1;
-    transform: rotate(360deg);
+    transform: translateX(0);
   }
 }
 @keyframes show-img {
   from {
-    transform: rotate(0deg);
+    transform: translateX(-150%);
   }
   to {
     opacity: 1;
-    transform: rotate(360deg);
+    transform: translateX(0);
   }
 }
 @-webkit-keyframes show-text {
