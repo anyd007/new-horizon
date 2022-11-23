@@ -1360,6 +1360,7 @@ footer a {
   }
   .modal__img {
     margin-top: 7rem;
+    width: 96%;
   }
 }
 @media (max-width: 768px) {
