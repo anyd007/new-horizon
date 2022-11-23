@@ -230,8 +230,8 @@
   width: 98%;
   height: auto;
   border-radius: 10px;
-  -webkit-animation: show-img 1s 1s forwards, shadow-move 5s linear 1s infinite;
-          animation: show-img 1s 1s forwards, shadow-move 5s linear 1s infinite;
+  -webkit-animation: show-img 1s 0.5s forwards, shadow-move 5s linear 1s infinite;
+          animation: show-img 1s 0.5s forwards, shadow-move 5s linear 1s infinite;
 }
 .about__info {
   display: grid;
@@ -679,10 +679,13 @@
   align-items: center;
   justify-items: center;
 }
+.gallery .gallery-container__item {
+  width: 28vw;
+}
 .gallery .gallery-container__item--img {
   border: 1px solid #fff;
   border-radius: 10px;
-  width: 28vw;
+  width: 100%;
   height: auto;
   cursor: pointer;
   box-shadow: 1px 1px 15px 0 #9C1513;
@@ -1045,8 +1048,8 @@
   opacity: 0;
   -webkit-animation-name: show-photo;
           animation-name: show-photo;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -1085,63 +1088,63 @@
   }
 }
 .see-more-gallery:nth-child(1) {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 
 .see-more-gallery:nth-child(2) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.see-more-gallery:nth-child(3) {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
 }
 
-.see-more-gallery:nth-child(3) {
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
+.see-more-gallery:nth-child(4) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
 }
 
-.see-more-gallery:nth-child(4) {
+.see-more-gallery:nth-child(5) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.see-more-gallery:nth-child(6) {
   -webkit-animation-delay: 1.2s;
           animation-delay: 1.2s;
 }
 
-.see-more-gallery:nth-child(5) {
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+.see-more-gallery:nth-child(7) {
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
 }
 
-.see-more-gallery:nth-child(6) {
+.see-more-gallery:nth-child(8) {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+.see-more-gallery:nth-child(9) {
   -webkit-animation-delay: 1.8s;
           animation-delay: 1.8s;
 }
 
-.see-more-gallery:nth-child(7) {
-  -webkit-animation-delay: 2.1s;
-          animation-delay: 2.1s;
-}
-
-.see-more-gallery:nth-child(8) {
-  -webkit-animation-delay: 2.4s;
-          animation-delay: 2.4s;
-}
-
-.see-more-gallery:nth-child(9) {
-  -webkit-animation-delay: 2.7s;
-          animation-delay: 2.7s;
-}
-
 .see-more-gallery:nth-child(10) {
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 .see-more-gallery:nth-child(11) {
-  -webkit-animation-delay: 3.3s;
-          animation-delay: 3.3s;
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
 }
 
 .see-more-gallery:nth-child(12) {
-  -webkit-animation-delay: 3.6s;
-          animation-delay: 3.6s;
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
 }
 
 footer {

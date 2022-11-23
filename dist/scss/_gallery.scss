@@ -64,7 +64,7 @@
     .see-more-gallery{
         opacity: 0;
         animation-name: show-photo;
-        animation-duration: 0.5s;
+        animation-duration: 0.3s;
         animation-fill-mode: forwards;
     }
 }
@@ -88,6 +88,6 @@
 }
 @for $i from 1 through 12{
     .see-more-gallery:nth-child(#{$i}){
-        animation-delay: $i * 0.3s;
+        animation-delay: $i * 0.2s;
     }
 }
