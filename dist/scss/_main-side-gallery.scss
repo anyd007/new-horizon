@@ -21,14 +21,16 @@
         width: 100%;
         height: auto;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 32%);
+        grid-template-rows: 30vw;
         gap: 10px;
         align-items: center;
+        justify-content: center;
         justify-items: center;
         // overflow: hidden;
 
         &__item{
-            width: 28vw;
+            width: 95%;
             &--img{
                 border: 1px solid #fff;
                 border-radius: 10px;
@@ -47,6 +49,8 @@
         
 
         &__link{
+            text-align: center;
+            width: 30%;
             margin-top: 1rem;
             padding: 5px 20px;
             background: $extra-color;
