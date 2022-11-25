@@ -1,0 +1,10 @@
+
+@include screen(tablets){
+
+    .cookies{
+        width: 95%;
+        &__text{
+            font-size: 0.5rem;
+        }
+    }
+}

@@ -3,6 +3,7 @@ import './scroll.js'
 import './media.js'
 import './gallery.js'
 import './about.js'
+import './cookies.js'
 
 AOS.init();
 

@@ -1,0 +1,61 @@
+
+.cookies{
+    position: sticky;
+    bottom: 0%;
+    width: 90%;
+    z-index: 5;
+    background: $extra-color;
+    margin: 0 auto;
+    border-radius: 10px;
+    transform: translateY(100%);
+    animation: cookies 0.5s 3s ease-in-out forwards;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+
+    &.close{
+        animation: cookies-off 0.5s 0s ease-in-out forwards;
+    }
+
+    &__text{
+        font-size: 0.8rem;
+        margin: 10px 10px;
+
+        a{
+            text-decoration: underline;
+            color: #000;
+        }
+    }
+
+    &__btn{
+        padding: 10px 10px;
+        margin: 0 5px;
+        font-size: 0.7rem;
+        cursor: pointer;
+        border: 2px solid #000;
+        background: #fff;
+        color: $extra-color;
+        border-radius: 10px;
+        font-weight: bold;
+
+
+    }
+}
+
+@keyframes cookies {
+    from{
+        transform: translateY(100%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+@keyframes cookies-off {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(100%);
+    }
+}
