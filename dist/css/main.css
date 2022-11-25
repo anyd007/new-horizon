@@ -114,11 +114,12 @@
   }
 }
 .title {
-  text-align: center;
+  display: grid;
+  grid-template-rows: 40vh;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
   position: relative;
-  opacity: 0;
-  -webkit-animation: show-title 0.8s linear 0.5s forwards;
-          animation: show-title 0.8s linear 0.5s forwards;
 }
 .title__logo {
   position: absolute;
@@ -126,8 +127,8 @@
   height: auto;
   top: 10%;
   left: -100%;
-  -webkit-animation: show-logo 0.5s linear 1s forwards;
-          animation: show-logo 0.5s linear 1s forwards;
+  -webkit-animation: show-logo 0.5s linear 0.5s forwards;
+          animation: show-logo 0.5s linear 0.5s forwards;
   overflow: hidden;
 }
 .title__logo2 {
@@ -136,14 +137,16 @@
   height: auto;
   top: 10%;
   right: -100%;
-  -webkit-animation: show-logo2 0.5s linear 1s forwards;
-          animation: show-logo2 0.5s linear 1s forwards;
+  -webkit-animation: show-logo2 0.5s linear 0.5s forwards;
+          animation: show-logo2 0.5s linear 0.5s forwards;
   overflow: hidden;
 }
 .title__main-logo {
-  width: 90%;
+  width: 100%;
   height: auto;
-  margin: -8% 0;
+  opacity: 0;
+  -webkit-animation: show-title 0.8s linear 0.5s forwards;
+          animation: show-title 0.8s linear 0.5s forwards;
 }
 .title__text {
   text-align: center;
@@ -158,7 +161,6 @@
 @-webkit-keyframes show-title {
   0% {
     opacity: 0;
-    transform: scale(0);
   }
   50% {
     opacity: 0.6;
@@ -173,7 +175,6 @@
 @keyframes show-title {
   0% {
     opacity: 0;
-    transform: scale(0);
   }
   50% {
     opacity: 0.6;
@@ -225,6 +226,7 @@
   gap: 3rem;
 }
 .about__img {
+  opacity: 0;
   transform: translateX(-150%);
   overflow: hidden;
   width: 98%;
@@ -236,7 +238,6 @@
 .about__info {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
 }
 .about__info p {
   grid-column: 1/3;
@@ -249,8 +250,7 @@
 }
 .about__info .about__members--img {
   z-index: -1;
-  transition: transform 1.2s ease-in-out;
-  transition-delay: 0.3s;
+  transition: transform 1s ease-in-out;
   transform: translateY(200%);
 }
 .about__info .about__members--img.open {
@@ -275,6 +275,7 @@
 }
 @-webkit-keyframes show-img {
   from {
+    opacity: 0;
     transform: translateX(-150%);
   }
   to {
@@ -284,6 +285,7 @@
 }
 @keyframes show-img {
   from {
+    opacity: 0;
     transform: translateX(-150%);
   }
   to {
@@ -1280,6 +1282,7 @@ footer a {
 @media (max-width: 768px) {
   .title {
     padding-top: 4rem;
+    grid-template-rows: 18vh;
   }
   .title__text {
     font-size: 3rem;

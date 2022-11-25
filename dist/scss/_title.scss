@@ -1,11 +1,12 @@
 @import './config';
 
     .title{
-        text-align: center;
-        // padding-top: 4rem;
+        display: grid;
+        grid-template-rows: 40vh;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
         position: relative;
-        opacity: 0;
-        animation: show-title 0.8s linear 0.5s forwards;
 
         &__logo{
             position: absolute;
@@ -13,7 +14,7 @@
             height: auto;
             top: 10%;
             left: -100%;
-            animation: show-logo 0.5s linear 1s forwards;
+            animation: show-logo 0.5s linear 0.5s forwards;
             overflow: hidden;
         }
 
@@ -23,13 +24,14 @@
             height: auto;
             top: 10%;
             right: -100%;
-            animation: show-logo2 0.5s linear 1s forwards;
+            animation: show-logo2 0.5s linear 0.5s forwards;
             overflow: hidden;
         }
         &__main-logo{
-            width: 90%;
+            width: 100%;
             height: auto;
-            margin: -8% 0;
+            opacity: 0;
+            animation: show-title 0.8s linear 0.5s forwards;
         }
         &__text{
         text-align: center;
@@ -43,7 +45,6 @@
     @keyframes show-title {
         0%{
         opacity: 0;
-        transform: scale(0);
         }
         50%{
             opacity: 0.6;
