@@ -1,5 +1,6 @@
 
 .cookies{
+    overflow: hidden;
     position: sticky;
     bottom: 0%;
     width: 90%;
@@ -39,7 +40,6 @@
         border-radius: 10px;
         font-weight: bold;
 
-
     }
 }
 
@@ -53,9 +53,9 @@
 }
 @keyframes cookies-off {
     from{
-        transform: translateY(0);
+        transform: translateX(0);
     }
     to{
-        transform: translateY(100%);
+        transform: translateX(-100vw);
     }
 }

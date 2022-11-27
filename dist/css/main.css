@@ -1382,6 +1382,7 @@ footer a {
   }
 }
 .cookies {
+  overflow: hidden;
   position: -webkit-sticky;
   position: sticky;
   bottom: 0%;
@@ -1441,18 +1442,18 @@ footer a {
 }
 @-webkit-keyframes cookies-off {
   from {
-    transform: translateY(0);
+    transform: translateX(0);
   }
   to {
-    transform: translateY(100%);
+    transform: translateX(-100vw);
   }
 }
 @keyframes cookies-off {
   from {
-    transform: translateY(0);
+    transform: translateX(0);
   }
   to {
-    transform: translateY(100%);
+    transform: translateX(-100vw);
   }
 }
 @media (max-width: 768px) {
