@@ -149,8 +149,10 @@
           animation: show-title 0.8s linear 0.5s forwards;
 }
 .title__text {
+  visibility: hidden;
+  opacity: 0;
   text-align: center;
-  font-size: 5rem;
+  font-size: 0.5rem;
   background: linear-gradient(to right, rgba(156, 21, 19, 0.9), rgba(156, 21, 19, 0.4));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1285,7 +1287,7 @@ footer a {
     grid-template-rows: 18vh;
   }
   .title__text {
-    font-size: 3rem;
+    font-size: 0.1rem;
   }
   .title__text--name {
     font-size: 4rem;
