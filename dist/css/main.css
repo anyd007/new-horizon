@@ -1299,7 +1299,10 @@ footer a {
 }
 @media (max-width: 768px) {
   .audio .audio-playlist {
-    grid-template-columns: repeat(1, 50%);
+    grid-template-columns: repeat(2, 40%);
+  }
+  .audio .audio-playlist__item--title {
+    font-size: 1rem;
   }
   .audio .bg__title {
     top: 0%;

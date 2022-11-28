@@ -4,7 +4,14 @@
     .audio{
 
         .audio-playlist{
-            grid-template-columns: repeat(1, 50%);
+            grid-template-columns: repeat(2, 40%);
+
+            &__item{
+
+                &--title{
+                    font-size: 1rem;
+                }
+            }
         }
 
         .bg{
