@@ -10,7 +10,7 @@
     .audio-playlist{
         display: grid;
         grid-template-columns: repeat(3, 30%);
-        align-items: center;
+        align-items: start;
         justify-content: center;
         justify-items: center;
         gap: 3rem;
@@ -31,12 +31,13 @@
                 font-size: 1.5rem;
                 box-shadow: 2px 2px 20px 0 $extra-color;
                 padding: 15px;
-                border-radius: 50%;
+                // border-radius: 50%;
                 border: 2px solid #fff;
                 z-index: -1;
                 width: 60px;
                 height: 60px;
                 @include smooth;
+                animation: morph 6s ease-in-out infinite;
             }
 
             &--title{
@@ -45,6 +46,7 @@
 
             &:hover i{
                 transform: scale(1.2);
+                background: $extra-color;
             }
         }
     }
@@ -280,5 +282,10 @@
     }
     to{
         opacity: 1;
+    }
+}
+@keyframes morph {
+    50%{
+        border-radius: 50%;
     }
 }
