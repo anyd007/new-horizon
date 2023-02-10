@@ -65,10 +65,11 @@
     }
 
     .video-container{
-        padding-top: 2rem;
+        padding: 2rem 0;
         max-width: 50%;
         margin: 0 auto;
         &__item{
+            box-shadow: 2px 2px 15px #fff;
            position: relative;
            width: 100%;
            padding-bottom: 56.25%;

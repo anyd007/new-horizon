@@ -4,6 +4,7 @@ import './media.js'
 import './gallery.js'
 import './about.js'
 import './cookies.js'
+import './background-animation.js'
 
 AOS.init();
 
@@ -13,3 +14,4 @@ document.querySelectorAll('img')
         AOS.refresh()
     )
 );
+
