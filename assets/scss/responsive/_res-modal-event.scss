@@ -1,13 +1,35 @@
 @import '../config';
 
-@include screen(tablets) {
+@include screen(laptops) {
+
     .modal-event {
         .modal-event-container {
             &__info {
                 font-size: 1.5rem;
-                color: #000;
+                line-height: 1.8rem;
+                letter-spacing: 1px;
+
+                &--extra{
+                    font-size: 1.7rem;
+                }
+                
             }
         }
     }
 
+}
+@include screen(tablets){
+    .modal-event {
+    .modal-event-container{
+        animation: show-event-res 1s forwards ease-in-out;
+    }
+}
+}
+@keyframes show-event-res{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 80%;
+    }
 }
