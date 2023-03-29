@@ -1,0 +1,51 @@
+
+.events{
+    padding-top: 5rem;
+
+    &__title{
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    &__item{
+        border: 3px solid #fff;
+        border-radius: 50px 10px;
+        width: 90%;
+        margin: 0 auto;
+
+        &--title{
+            padding: 20px 0;
+            text-align: center;
+            text-transform: uppercase;
+            color: $extra-color;
+            font-size: 2rem;
+        }
+        &--text{
+            padding: 20px;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        &--countdown{
+            
+            color: $extra-color;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 2rem;
+        }
+    }
+}
+@include screen(phones){
+
+    .events{
+        &__item{
+            &--title{
+                
+                font-size: 1.5rem;
+            }
+            &--text{
+                padding: 10px;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
