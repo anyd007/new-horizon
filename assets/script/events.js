@@ -20,11 +20,12 @@ const counter = setInterval(function () {
   const seconds = Math.floor((distance % (1000 * 60)) / 1000);
   
   let hoursDisplay = document.createElement("p")
+  
   if(hours === 1){
     hoursDisplay.textContent = "godzina"
-  }else if(hours <= 4){
+  }if(hours <= 4){
     hoursDisplay.textContent = "godziny"
-  }else if(hours <=  20){
+  }if(hours <=  20 || hours === 0){
         hoursDisplay.textContent = "godzin"
     }
   else{

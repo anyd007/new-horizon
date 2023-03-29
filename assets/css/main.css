@@ -554,6 +554,9 @@
     padding: 10px;
     font-size: 1.2rem;
   }
+  .events__item--countdown {
+    font-size: 1.3rem;
+  }
 }
 .scrollArrow {
   position: fixed;
