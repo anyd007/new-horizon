@@ -21,15 +21,7 @@
 @include screen(tablets){
     .modal-event {
     .modal-event-container{
-        animation: show-event-res 1s forwards ease-in-out;
+       width: 85%;
     }
 }
-}
-@keyframes show-event-res{
-    from{
-        width: 0%;
-    }
-    to{
-        width: 80%;
-    }
 }

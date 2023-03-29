@@ -35,7 +35,7 @@
 }
 .nav .nav-main {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   justify-items: center;
 }
 .nav .nav-main__item {
@@ -1106,6 +1106,7 @@ footer a {
   transform: translate(-50%, -50%);
   background: #9C1513;
   z-index: 6;
+  border-radius: 50px 10px;
   animation: show-event 1s forwards ease-in-out;
 }
 .modal-event .modal-event-container__info {
@@ -1345,15 +1346,7 @@ footer a {
 }
 @media (max-width: 768px) {
   .modal-event .modal-event-container {
-    animation: show-event-res 1s forwards ease-in-out;
-  }
-}
-@keyframes show-event-res {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 80%;
+    width: 85%;
   }
 }
 * {

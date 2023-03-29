@@ -19,6 +19,7 @@
         transform: translate(-50%, -50%);
         background: $extra-color;
         z-index: 6;
+        border-radius: 50px 10px;
         animation: show-event 1s forwards ease-in-out;
 
         &__info{
