@@ -1404,4 +1404,8 @@ header :is(ul) {
 
 .stopScroll {
   overflow: hidden;
+}
+
+.hide {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
