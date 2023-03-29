@@ -1109,6 +1109,7 @@ footer a {
   animation: show-event 1s forwards ease-in-out;
 }
 .modal-event .modal-event-container__info {
+  padding: 0 15px;
   margin: 40px auto;
   text-align: center;
   font-size: 2rem;
@@ -1330,6 +1331,12 @@ footer a {
   100% {
     transform: scale(1) translateY(-500%) rotate(360deg);
     opacity: 0;
+  }
+}
+@media (max-width: 768px) {
+  .modal-event .modal-event-container__info {
+    font-size: 1.5rem;
+    color: #000;
   }
 }
 * {
