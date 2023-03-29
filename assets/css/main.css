@@ -1097,14 +1097,14 @@ footer a {
   z-index: 5;
 }
 .modal-event .modal-event-container {
+  opacity: 0;
   position: absolute;
-  width: 0%;
+  width: 50%;
   height: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: #9C1513;
-  opacity: 0.9;
   z-index: 6;
   animation: show-event 1s forwards ease-in-out;
 }
@@ -1126,10 +1126,10 @@ footer a {
 
 @keyframes show-event {
   from {
-    width: 0%;
+    opacity: 0;
   }
   to {
-    width: 50%;
+    opacity: 0.9;
   }
 }
 @media (max-width: 768px) {

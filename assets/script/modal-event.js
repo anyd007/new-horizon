@@ -12,7 +12,7 @@ if(currentDate >= endDate) {
 else{
     setTimeout(() => {
         modal.classList.remove("hide")
-    }, 400);
+    }, 2000);
 setTimeout(() => {
    
   modal.style.display = 'none';
