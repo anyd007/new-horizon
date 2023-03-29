@@ -5,6 +5,7 @@ import './gallery.js'
 import './about.js'
 import './cookies.js'
 import './background-animation.js'
+import './modal-event.js'
 
 AOS.init();
 
