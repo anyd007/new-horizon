@@ -23,6 +23,7 @@ const counter = setInterval(function () {
   let daysDisplay = document.createElement("p")
   
   days === 1 ? daysDisplay.textContent = "dzień" : daysDisplay.textContent = "dni"
+  let secDisplay = seconds <= 9 ? `0${seconds}` : `${seconds}`
 
   if(hours === 1){
     hoursDisplay.textContent = "godzina"
@@ -36,7 +37,7 @@ const counter = setInterval(function () {
   }
 
     // wyświetlamy wynik w konsoli
-   couterDisplay.innerHTML = `${days} ${daysDisplay.textContent} <br> ${hours} ${hoursDisplay.textContent} ${minutes} min. ${seconds} sek.`
+   couterDisplay.innerHTML = `${days} ${daysDisplay.textContent} <br> ${hours} ${hoursDisplay.textContent} ${minutes} min. ${secDisplay} sek.`
 
      // zatrzymujemy odliczanie, gdy osiągnięto datę docelową
   if (distance < 0) {
