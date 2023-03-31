@@ -29,18 +29,19 @@ const counter = setInterval(function () {
   days === 1 ? daysDisplay.textContent = "dzień" : daysDisplay.textContent = "dni"
 
   let secDisplay = seconds <= 9 ? `0${seconds}` : `${seconds}`
-
+  
   if(hours === 1){
     hoursDisplay.textContent = "godzina"
-  }if(hours <= 4){
+  }else if(hours <= 4){
     hoursDisplay.textContent = "godziny"
-  }if(hours <=  20 || hours === 0){
+  }else if(hours <=  20 || hours === 0){
         hoursDisplay.textContent = "godzin"
     }
   else{
+
     hoursDisplay.textContent = "godziny"
   }
-
+  
     // wyświetlamy wynik w konsoli
    couterDisplay.innerHTML = `${days} ${daysDisplay.textContent} <br> ${hours} ${hoursDisplay.textContent} ${minutes} min. ${secDisplay} sek.`
 
