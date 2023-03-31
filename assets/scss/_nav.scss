@@ -36,9 +36,13 @@
     z-index: 1;
 
     .nav-main{
+      // text-align: center;
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        margin: 0 auto;;
+        // grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(250px, 20%));
         justify-items: center;
+        justify-content: center;
 
         &__item{
             position: relative;
