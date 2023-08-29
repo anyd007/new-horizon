@@ -49,6 +49,10 @@
 
   <!-- Fontasome -->
   <script src="https://kit.fontawesome.com/788debddc7.js" crossorigin="anonymous"></script>
+
+  <!-- Zaimportowanie Hammer.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+
 </head>
 
 <body>
@@ -138,7 +142,7 @@
         <h3 class="events__item--countdown">Do wydarzenia zostało:<br/><span id="counter"></span></h3><br/>
       </div>
     </section> -->
-
+    <div class="background-animation">
     <section class="audio" id="audio-container">
       <h2 class="audio-title" data-aos="slide-up">NASZE ZAJAWKI</h2>
       <div class="audio-playlist" data-aos="slide-up">
@@ -213,31 +217,35 @@
           </div>
         </div>
     </section>
-
+   </div>
     <section class="gallery" id="gallery">
       <h2 class="gallery__title" data-aos="slide-up">TO MY</h2>
       <div class="gallery-container">
-        <div class="gallery-container__item" data-aos="slide-up">
-          <img class="gallery-container__item--img" id="img-1" src="./images/gallery/img-1.jpg" alt="nasze studio">
+        <div class="gallery_main">
+        <div class="gallery_main__item" data-aos="slide-up">
+          <img class="gallery_main__item--img" id="img-1" src="./images/gallery/img-1.jpg" alt="nasze studio">
         </div>
-        <div class="gallery-container__item" data-aos="slide-up">
-          <img class="gallery-container__item--img" id="img-2" src="./images/gallery/img-2.jpg" alt="nasze studio">
+        <div class="gallery_main__item" data-aos="slide-up">
+          <img class="gallery_main__item--img" id="img-2" src="./images/gallery/img-2.jpg" alt="nasze studio">
         </div>
-        <div class="gallery-container__item" data-aos="slide-up">
-          <img class="gallery-container__item--img" id="img-3" src="./images/gallery/img-3.jpg" alt="nasze studio">
+        <div class="gallery_main__item" data-aos="slide-up">
+          <img class="gallery_main__item--img" id="img-3" src="./images/gallery/img-3.jpg" alt="nasze studio">
         </div>
-        <div class="gallery-container__item" data-aos="slide-up">
-          <img class="gallery-container__item--img" id="img-4" src="./images/gallery/img-4.jpg" alt="nasze studio">
+        <div class="gallery_main__item" data-aos="slide-up">
+          <img class="gallery_main__item--img" id="img-4" src="./images/gallery/img-4.jpg" alt="nasze studio">
         </div>
-        <div class="gallery-container__item" data-aos="slide-up">
-          <img class="gallery-container__item--img" id="img-5" src="./images/gallery/img-5.jpg" alt="nasze studio">
+        <div class="gallery_main__item" data-aos="slide-up">
+          <img class="gallery_main__item--img" id="img-5" src="./images/gallery/img-5.jpg" alt="nasze studio">
         </div>
-        <div class="gallery-container__item" data-aos="slide-up">
-          <img class="gallery-container__item--img" id="img-6" src="./images/gallery/img-6.jpg" alt="nasze studio">
+        <div class="gallery_main__item" data-aos="slide-up">
+          <img class="gallery_main__item--img" id="img-6" src="./images/gallery/img-6.jpg" alt="nasze studio">
         </div>
-        <a class="gallery-container__link" href="gallery.html">ZOBACZ WIĘCEJ</a>
-      </div>
-      <div class="background-animation">
+        </div>
+          <i class="fa-solid fa-angles-right next_slide"></i>
+          <i class="fa-solid fa-angles-left prev_slide"></i>
+        </div>
+       
+      <a class="gallery-container__link" href="gallery.html">ZOBACZ WIĘCEJ</a>
         <div class="video-container">
           <div class="video-container__item">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/5qCo0rtaRPk"
@@ -246,7 +254,6 @@
             </iframe>
           </div>
         </div>
-      </div>
     </section>
 
     <section class="contact" id="contact">

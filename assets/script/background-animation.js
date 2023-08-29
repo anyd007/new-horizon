@@ -11,7 +11,7 @@ const createSquare =() =>{
     const square = document.createElement("span")
     square.classList.add("span-square")
 
-    let size = Math.random() *40;
+    let size = Math.random() *30;
 
     square.style.width = 20 + size + "px";
     square.style.height = 20 + size + "px";
@@ -31,5 +31,5 @@ const createSquare =() =>{
     }, 5000);
 }
 
-setInterval(createSquare, 150)
+setInterval(createSquare, 250)
 
