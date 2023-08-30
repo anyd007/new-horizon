@@ -15,6 +15,11 @@
         color: #fff;
         font-size: 3.5rem;
         cursor: pointer;
+        @include smooth;
+
+        &:hover{
+            transform: scale(1.2);
+        }
     }
 #see-more-gallery{
     position: relative;

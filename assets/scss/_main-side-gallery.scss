@@ -72,6 +72,11 @@
             transform: translateY(-50%);
             font-size: 3rem;
             cursor: pointer;
+            transition: all 0.1s linear;
+
+            &:active{
+                transform: translate(-5%, -50%) scale(0.8);
+            }
         }
 
         .prev_slide {
@@ -82,6 +87,11 @@
             transform: translateY(-50%);
             font-size: 3rem;
             cursor: pointer;
+            transition: all 0.1s linear;
+
+            &:active{
+                transform: translate(-5%, -50%) scale(0.8);
+            }
         }
 
 

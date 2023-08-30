@@ -2,13 +2,14 @@
 
 @include screen(tablets) {
   .gallery {
+    overflow: hidden;
     .gallery-container {
       text-align: center;
-      width: 95%;
+      width: 99%;
 
       &__item {
         &--img {
-          width: 98%;
+          width: 95%;
         }
       }
 

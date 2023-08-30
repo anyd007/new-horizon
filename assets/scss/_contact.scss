@@ -1,39 +1,70 @@
-
-.contact{
+.contact {
     padding: 2rem 0;
+    display: grid;
+    grid-template-columns: 40% 60%;
     text-align: center;
+    justify-items: center;
+    align-items: center;
+    position: relative;
 
-    &__title{
-        font-size: 2.5rem;
-        padding-bottom: 2rem;
+    .socials_container {
+        &__title {
+            font-size: 2.5rem;
+            padding-bottom: 1rem;
+        }
+
+        &__items {
+            &--icon {
+                padding: 15px;
+                font-size: 2.5rem;
+                cursor: pointer;
+                color: #fff;
+                @include smooth;
+
+                &:hover {
+                    transform: scale(1.2);
+                    color: $extra-color;
+                }
+            }
+        }
     }
 
-        &__link{
+    .contact_container {
+
+        &__title {
+            font-size: 2.5rem;
+            padding-bottom: 2rem;
+        }
+
+
+        &__link {
             text-transform: uppercase;
-            font-size: 2rem;
+            font-size: 1.3rem;
             color: $extra-color;
-            
-            
-            span{
+
+
+            span {
                 letter-spacing: 3px;
                 text-shadow: 0px 0px 18px#fff;
                 display: inline-block;
                 animation-name: link;
                 animation-duration: 5s;
                 animation-iteration-count: infinite;
-               
+
             }
         }
+    }
 }
 
 @keyframes link {
-   50%{
-    transform: scale(1.5);
-   
-   }
+    50% {
+        transform: scale(1.5);
+
+    }
 }
+
 @for $i from 1 through 25 {
-    .contact__link span:nth-child(#{$i}){
+    .contact_container__link span:nth-child(#{$i}) {
         animation-delay: $i * 0.3s;
     }
 }
