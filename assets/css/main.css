@@ -703,9 +703,12 @@
   transform: translate(-5%, -50%) scale(0.8);
 }
 .gallery .video-container {
-  padding: 2rem 0;
-  max-width: 50%;
-  margin: 0 auto;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
   z-index: 2;
 }
 .gallery .video-container__item {
@@ -1357,7 +1360,7 @@ footer a {
     display: none;
   }
   .gallery .video-container {
-    max-width: 90%;
+    grid-template-columns: 90%;
   }
   .modal__next {
     top: 60%;
