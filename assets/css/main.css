@@ -825,12 +825,13 @@
   grid-template-columns: 40% 60%;
   text-align: center;
   justify-items: center;
-  align-items: center;
+  align-items: start;
   position: relative;
 }
 .contact .socials_container__title {
   font-size: 2.5rem;
   padding-bottom: 1rem;
+  text-transform: uppercase;
 }
 .contact .socials_container__items--icon {
   padding: 15px;
@@ -846,6 +847,7 @@
 .contact .contact_container__title {
   font-size: 2.5rem;
   padding-bottom: 2rem;
+  text-transform: uppercase;
 }
 .contact .contact_container__link {
   text-transform: uppercase;
@@ -1348,10 +1350,13 @@ footer a {
     text-align: center;
     width: 99%;
   }
-  .gallery .gallery-container__item--img {
-    width: 95%;
+  .gallery .gallery-container .gallery_main__item {
+    padding: 0 5px;
   }
-  .gallery .gallery-container__link {
+  .gallery .gallery-container .gallery_main__item--img {
+    width: 100%;
+  }
+  .gallery .gallery-container .gallery_main__link {
     font-size: 1rem;
     width: 50%;
   }

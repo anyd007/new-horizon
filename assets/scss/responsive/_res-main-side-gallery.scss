@@ -3,47 +3,55 @@
 @include screen(tablets) {
   .gallery {
     overflow: hidden;
+
     .gallery-container {
       text-align: center;
       width: 99%;
 
-      &__item {
-        &--img {
-          width: 95%;
+      .gallery_main {
+
+        &__item {
+          padding: 0 5px;
+
+          &--img {
+            width: 100%;
+          }
+        }
+
+        &__link {
+          font-size: 1rem;
+          width: 50%;
         }
       }
-
-      &__link {
-        font-size: 1rem;
-        width: 50%;
-      }
     }
+
     .next_slide,
     .prev_slide {
       display: none;
     }
-    .video-container{
-        grid-template-columns: 90%;
+
+    .video-container {
+      grid-template-columns: 90%;
     }
   }
 
   .modal {
 
-    &__next{
+    &__next {
       top: 60%;
     }
 
-    &__prev{
+    &__prev {
       top: 60%;
     }
 
-    &__exit{
+    &__exit {
       font-size: 3.5rem;
     }
 
     &__img {
-        margin-top: 7rem;
-        width: 96%;
+      margin-top: 7rem;
+      width: 96%;
     }
   }
 }
